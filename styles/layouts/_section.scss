@@ -34,6 +34,7 @@
                     display: flex;
                     align-items: flex-end;
                     background-color: hsla(196, 25%, 15%, 1);
+                    color: white;
                     border: none;
                     border-radius: 8px;
                     padding: .5rem 2rem;
@@ -54,6 +55,52 @@
                         width: 25%;
                     }
                 }
+            }
+        }
+    }
+
+    .introImgContainer{
+        margin-top: 3rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.section2{
+    padding-top: 4rem;
+    h1{
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    p{
+        text-align: center;
+        line-height: 1.5;
+        color: hsla(196, 10%, 38%, 1);
+    }
+
+    .collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .allFurnitures{
+            background-color: hsla(180, 27%, 98%, 1);
+            padding: .5rem 1rem;
+            width: 80%;
+            margin: 1rem auto;
+            border-radius: 2rem;
+            border: none;
+            transition: .5s ease;
+            &:hover{
+                background-color: hsla(164, 71%, 42%, 1);
+                &:hover p{
+                    color: white;
+                }
+            }
+            p{
+                text-align: center;
+                color: black;
             }
         }
     }
