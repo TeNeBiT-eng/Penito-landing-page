@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <title>Penito Landing Page</title>
-</head>
-<body>
-    <header class="header">
-        <a href="" class="logo"><img src="/images/Logo.svg" alt=""></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="#work">Our Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#contact">Contact</a></li>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img src="/images/Logo.svg" alt="" />
+        </div>
+        <ul class="menuLinks" id="menuLinks">
+          <li><a href="#">Living Room</a></li>
+          <li><a href="#">Office</a></li>
+          <li><a href="#">Bedroom</a></li>
+          <li><a href="#">Sofas</a></li>
+          <li><a href="#">Outdoors</a></li>
+          <li><a href="#">Kitchen</a></li>
         </ul>
-      </header>
-</body>
+        <ul class="menuLinks2">
+          <li><a href="#">Living Room</a></li>
+          <li><a href="#">Office</a></li>
+          <li><a href="#">Bedroom</a></li>
+          <li><a href="#">Sofas</a></li>
+          <li><a href="#">Outdoors</a></li>
+          <li><a href="#">Kitchen</a></li>
+        </ul>
+
+        <div class="search_cart">
+          <div class="searchContainer">
+            <img src="/images/Group 9search.svg" alt="" />
+          </div>
+          <div class="cartContainer">
+            <img src="/images/Group 10cart.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="bars" id="hamburger">
+          <i class="fa-solid fa-bars" onclick="changeicon(this)"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section1">
+        <div class="textIntro">
+            <h1>
+                Discover <span class="best">The Best</span> Furniture For <b>Your Interior</b>
+            </h1>
+
+            <p>
+                We design pieces of furniture and objects that perfectly gap between Beauty and functionality.
+            </p>
+
+            <div class="btn1_btn2"> 
+                <div class="btn1Container">
+                    <button>
+                      <p>Shop Now</p><img src="/images/akar-icons_circle-chevron-right-fillshopnow-icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="btn2Container">
+                    <button>
+                      <img src="/images/Playplaybtn.svg" alt=""><p>Watch Video</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="introImgContainer">
+            <img src="/images/Group 12intro-pic.svg" alt="">
+        </div>
+    </section>
+    
+    <script src="/script.js" async defer></script>
+  </body>
 </html>
