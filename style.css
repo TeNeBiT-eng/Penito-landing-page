@@ -29,51 +29,55 @@
   header nav .search_cart {
     display: flex !important;
   }
-}
-.link-1 a:before, .link-1 a:after {
-  content: "";
-  border-bottom: solid 1px white;
-  position: absolute;
-  bottom: 0;
-  width: 0;
-}
 
-.link-1 a:before {
-  left: 0;
+  .section2 .dropdownContainer {
+    display: none !important;
+  }
+  .section2 .collection {
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .section2 .collection .furnitures {
+    background-color: hsl(180deg, 27%, 98%);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+  }
+  .section2 .collection .furnitures:hover {
+    background-color: hsl(164deg, 71%, 42%);
+  }
+  .section2 .collection .furnitures .furniture {
+    color: black !important;
+    font-size: 1rem;
+    font-weight: 600;
+    width: unset;
+  }
 }
-
-.link-1 a:after {
-  right: 0;
-}
-
-.link-1 a:hover:before, .link-1 a:hover:after {
-  width: 50%;
-}
-
-.link-1 a:before, .link-1 a:after {
-  transition: all 0.2s ease;
-}
-
 header {
+  background-color: #f4f4f4;
   width: 100%;
   padding-top: 2rem;
   z-index: 2;
 }
 header nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  position: relative;
 }
 header nav .menuLinks2 {
   display: none;
 }
 header nav .menuLinks {
   position: absolute;
-  top: 100%;
-  right: -200%;
+  top: -1000%;
+  right: 0%;
   width: 100%;
   padding: 3rem 0;
   background-color: #f4f4f4;
@@ -87,6 +91,7 @@ header nav .menuLinks li {
 }
 header nav .menuLinks li a {
   font-weight: 600;
+  color: black;
 }
 header nav .bars i {
   color: black;
@@ -96,14 +101,14 @@ header nav .search_cart {
 }
 
 .activeShow {
-  right: 0 !important;
+  top: 59% !important;
 }
 
 .section1 {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 1rem auto;
+  margin: 10vh auto;
 }
 .section1 .textIntro {
   text-align: center;
@@ -122,7 +127,7 @@ header nav .search_cart {
 }
 .section1 .textIntro p {
   line-height: 1.5;
-  color: #58666B;
+  color: #58666b;
 }
 .section1 .textIntro .btn1_btn2 {
   margin-top: 2rem;
@@ -170,33 +175,94 @@ header nav .search_cart {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
   padding-bottom: 1rem;
 }
 .section2 p {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
   line-height: 1.5;
   color: hsl(196deg, 10%, 38%);
 }
-.section2 .collection {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.section2 .collection .allFurnitures {
-  background-color: hsl(180deg, 27%, 98%);
-  padding: 0.5rem 1rem;
-  width: 80%;
-  margin: 1rem auto;
-  border-radius: 2rem;
+.section2 .dropbtn {
+  background-color: hsl(164deg, 71%, 42%);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
   border: none;
-  transition: 0.5s ease;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.section2 .collection .allFurnitures:hover {
+.section2 .dropbtn:hover,
+.section2 .dropbtn:focus {
   background-color: hsl(164deg, 71%, 42%);
 }
-.section2 .collection .allFurnitures:hover:hover p {
-  color: white;
+.section2 .dropdownContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
-.section2 .collection .allFurnitures p {
+.section2 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.section2 .dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.section2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.section2 .dropdown a:hover {
+  background-color: #ddd;
+}
+.section2 .show {
+  display: block;
+}
+.section2 .collection {
+  display: none;
+}
+.section2 .furnitureAssets {
+  padding-top: 5vh;
+}
+.section2 .furnitureAssets .chair {
+  background-color: hsl(180deg, 27%, 98%);
+  border-radius: 8px;
+  width: 90%;
+  margin: auto;
+}
+.section2 .furnitureAssets .chair .chairImg {
+  margin: 0 auto;
+  width: 90%;
+}
+.section2 .furnitureAssets .chair .chairImg img {
+  width: 100%;
+}
+.section2 .furnitureAssets .chair .homeWooden {
+  text-transform: capitalize;
+  font-weight: 700;
   text-align: center;
   color: black;
+}
+.section2 .furnitureAssets .chair .grey_green {
+  display: flex;
+  padding-top: 3vh;
+}
+.section2 .furnitureAssets .chair .grey_green .grey {
+  font-weight: 600;
+}
+.section2 .furnitureAssets .chair .grey_green .green {
+  font-weight: 600;
+  color: hsl(164deg, 71%, 42%);
 }/*# sourceMappingURL=style.css.map */

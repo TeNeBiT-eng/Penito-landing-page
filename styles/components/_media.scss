@@ -18,28 +18,38 @@
       .bars {
         display: none;
       }
-      .search_cart{
+      .search_cart {
         display: flex !important;
       }
     }
   }
+
+  .section2 {
+    .dropdownContainer {
+      display: none !important;
+    }
+    .collection {
+      display: flex !important;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 2rem;
+      .furnitures {
+        background-color: hsla(180, 27%, 98%, 1);
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: hsla(164, 71%, 42%, 1);
+        }
+        .furniture {
+          color: black !important;
+          font-size: 1rem;
+          font-weight: 600;
+          width: unset;
+        }
+      }
+    }
+  }
 }
-.link-1 a:before, .link-1 a:after {
-    content: '';
-    border-bottom: solid 1px white;
-    position: absolute;
-    bottom: 0;
-    width: 0;
-  }
-  
-  .link-1 a:before { left: 0; }
-  .link-1 a:after { right: 0; }
-  
-  .link-1 a:hover:before, .link-1 a:hover:after {
-    width: 50%;
-  }
-  
-  .link-1 a:before, .link-1 a:after {
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
-  }

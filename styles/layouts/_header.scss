@@ -1,25 +1,25 @@
 header{
     // position: fixed;
+    background-color: #f4f4f4;
     width: 100%;
     padding-top: 2rem;
     // padding-bottom: 15rem;
     z-index: 2;
-
     nav{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 90%;
         margin: 0 auto;
-        position: relative;
         .menuLinks2{
             display: none;
         }
         .menuLinks{
             // display: none;
             position: absolute;
-            top: 100%;
-            right: -200%;
+            top: -1000%;
+            right: 0%;
             width: 100%;
             padding: 3rem 0;
             background-color: #f4f4f4;
@@ -35,6 +35,7 @@ header{
                 text-align: center;
                 a{
                     font-weight: 600;
+                    color: black;
                 }
             }
         }
@@ -50,5 +51,6 @@ header{
 }
 
 .activeShow{
-    right: 0 !important;
+    // right: 0 !important;
+    top: 59% !important;
 }
