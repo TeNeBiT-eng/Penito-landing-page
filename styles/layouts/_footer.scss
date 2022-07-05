@@ -5,6 +5,9 @@ footer {
         display: flex;
         justify-content: center;
         padding-bottom: 1rem;
+        img {
+          cursor: pointer;
+        }
       }
       p {
         text-align: center;
@@ -15,7 +18,12 @@ footer {
         justify-content: center;
         column-gap: 1.5rem;
         padding-top: 2rem;
-        padding-bottom: .5rem;
+        padding-bottom: 0.5rem;
+        div {
+          img {
+            cursor: pointer;
+          }
+        }
       }
     }
     .faq {
@@ -32,9 +40,9 @@ footer {
         // width: 40%;
         // margin: 0 auto;
         padding-top: 1.5rem;
-        padding-bottom: .5rem;
-        h3{
-            font-weight: 500;
+        padding-bottom: 0.5rem;
+        h3 {
+          font-weight: 500;
         }
       }
       .answer {
@@ -44,7 +52,7 @@ footer {
         transition: max-height 0.9s ease;
         p {
           line-height: 1.6;
-          padding-top: .4rem;
+          padding-top: 0.4rem;
         }
       }
     }

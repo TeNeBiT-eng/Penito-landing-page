@@ -177,4 +177,57 @@
       }
     }
   }
+
+  footer{
+    .footerFlex{
+      display: flex;
+      align-items: flex-start !important;
+      column-gap: 1rem;
+      width: 90%;
+      margin: 0 auto;
+      .faq{
+        margin-top: 0 !important;
+        .question{
+          padding-top: 0 !important;
+          justify-content: flex-start !important;
+          position: relative;
+          padding-bottom: 3rem !important;
+          &::after{
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: hsla(196, 10%, 38%, 1);
+            position: absolute;
+            top: 60px;
+          }
+          h3{
+            text-align: start !important;
+          }
+          i{
+            display: none;
+          }
+        }
+        .answer{
+          max-height: 300px !important;
+          p{
+            color: hsla(196, 10%, 38%, 1);
+            text-align: start !important;
+          }
+        }
+      }
+      .footerPenito{
+        // transform: translateY(-7%);
+        .footerLogo{
+          justify-content: flex-start !important;
+        }
+        p{
+          text-align: start !important;
+          width: 70%;
+        }
+        .smLogo{
+          justify-content: flex-start !important;
+        }
+      }
+    }
+  }
 }

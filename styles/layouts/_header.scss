@@ -12,6 +12,11 @@ header{
         align-items: center;
         width: 90%;
         margin: 0 auto;
+        .headerLogoContainer{
+            img{
+                cursor: pointer;
+            }
+        }
         .menuLinks2{
             display: none;
         }
