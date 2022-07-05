@@ -32,6 +32,34 @@
          column-gap: 1rem;
   }
 
+  .section1 {
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .section1 .textIntro h1 {
+    text-align: start !important;
+  }
+  .section1 .textIntro p {
+    text-align: start;
+  }
+  .section1 .textIntro .btn1_btn2 {
+    justify-content: flex-start !important;
+  }
+  .section1 .introImgContainer {
+    margin-top: 0 !important;
+  }
+
+  .section2 #items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+  .section2 #items div {
+    height: 36rem;
+  }
+  .section2 p {
+    width: 70% !important;
+    margin: 0 auto;
+  }
   .section2 .dropdownContainer {
     display: none !important;
   }
@@ -48,6 +76,7 @@
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     transition: all 0.5s ease;
+    cursor: pointer;
   }
   .section2 .collection .furnitures:hover {
     background-color: hsl(164deg, 71%, 42%);
@@ -56,12 +85,50 @@
     color: black !important;
     font-size: 1rem;
     font-weight: 600;
-    width: unset;
+    width: unset !important;
   }
   .section2 .seeMoreBtnContainer button:hover {
     color: hsl(196deg, 36%, 17%);
     background-color: transparent;
     border: 1px solid hsl(196deg, 36%, 17%);
+  }
+
+  .section3 .services_image {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section3 .services_image .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section3 .services_image .services .serviceIllustration .serviceIllustrationImg {
+    justify-content: flex-start !important;
+  }
+  .section3 .services_image .services .serviceIllustration .serviceIllustrationImg img {
+    height: 3rem;
+  }
+  .section3 .services_image .services .serviceIllustration h2 {
+    text-align: start !important;
+  }
+  .section3 .services_image .services .serviceIllustration p {
+    text-align: start !important;
+    margin: 0 !important;
+  }
+
+  .section4 .customerReviewSection {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section4 .customerReviewSection .customerReviewText h2 {
+    text-align: start !important;
+  }
+  .section4 .customerReviewSection .customerReviewText p {
+    text-align: start !important;
+    margin: 0 !important;
   }
 
   .section5 .companyLogoContainer .company {
@@ -287,7 +354,6 @@ header nav .search_cart {
 .section2 .funitureItems {
   padding-top: 10vh;
   display: grid;
-  grid-auto-flow: row;
   place-items: center;
 }
 .section2 .funitureItems div {

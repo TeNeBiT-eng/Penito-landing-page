@@ -1,4 +1,4 @@
-function myFunction() {
+function myBtn() {
     let dots = document.getElementById("dots");
     let moreText = document.getElementById("more");
     let btnText = document.getElementById("myBtn");

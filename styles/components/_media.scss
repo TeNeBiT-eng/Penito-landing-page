@@ -25,7 +25,37 @@
     }
   }
 
+  .section1{
+    flex-direction: row !important;
+    align-items: center;
+    .textIntro{
+      h1{
+        text-align: start !important;
+      }
+      p{
+        text-align: start;
+      }
+      .btn1_btn2{
+        justify-content: flex-start !important;
+      }
+    }
+    .introImgContainer{
+      margin-top: 0 !important;
+    }
+  }
+
   .section2 {
+    #items{
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      div{
+        height: 36rem;
+      }
+    }
+    p{
+      width: 70% !important;
+      margin: 0 auto;
+    }
     .dropdownContainer {
       display: none !important;
     }
@@ -41,6 +71,7 @@
         border-radius: 2rem;
         padding: 0.5rem 1rem;
         transition: all 0.5s ease;
+        cursor: pointer;
         &:hover {
           background-color: hsla(164, 71%, 42%, 1);
         }
@@ -48,7 +79,7 @@
           color: black !important;
           font-size: 1rem;
           font-weight: 600;
-          width: unset;
+          width: unset !important;
         }
       }
     }
@@ -64,7 +95,49 @@
   }
 
   .section3{
+    .services_image{
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      .services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .serviceIllustration{
+          .serviceIllustrationImg{
+            justify-content: flex-start !important;
+            img{
+              height: 3rem;
+            }
+          }
+          h2{
+            text-align: start !important;
+          }
+          p{
+            text-align: start !important;
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
 
+  .section4{
+    .customerReviewSection{
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      .customerReviewText{
+        h2{
+          text-align: start !important;
+        }
+        p{
+          text-align: start !important;
+          margin: 0 !important;
+        }
+      }
+    }
   }
 
   .section5{
