@@ -97,7 +97,7 @@
 
   .dropbtn:hover,
   .dropbtn:focus {
-    transition: .5s ease;
+    transition: 0.5s ease;
     background-color: hsla(164, 71%, 42%, 1);
   }
 
@@ -173,7 +173,7 @@
     justify-content: center;
     padding-top: 1rem;
     button {
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
       background-color: hsla(196, 36%, 17%, 1);
       color: white;
@@ -228,7 +228,7 @@
     justify-content: center;
     padding-top: 2rem;
     button {
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
       background-color: hsla(196, 36%, 17%, 1);
       color: white;
@@ -259,14 +259,14 @@
         color: hsl(196deg, 10%, 38%);
         // transition: all .4s ease;
       }
-      .readMoreBtnContainer{
+      .readMoreBtnContainer {
         display: flex;
         justify-content: center;
         #myBtn {
           background-color: hsla(196, 36%, 17%, 1);
           color: white;
-          font-size: .7rem;
-          padding: .4rem 1rem;
+          font-size: 0.7rem;
+          padding: 0.4rem 1rem;
           border-radius: 2rem;
           border: none;
         }

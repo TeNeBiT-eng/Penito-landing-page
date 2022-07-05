@@ -26,10 +26,16 @@
   header nav .bars {
     display: none;
   }
+  header nav .bars i {
+    display: none;
+  }
   header nav .search_cart {
     display: flex !important;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+  header nav .search_cart .searchContainer {
+    display: block !important;
   }
 
   .section1 {
@@ -281,10 +287,19 @@ header nav .menuLinks li a {
   font-weight: 600;
   color: black;
 }
+header nav .bars {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
 header nav .bars i {
   color: black;
 }
-header nav .search_cart {
+header nav .search_cart .searchContainer {
+  display: none;
+}
+header nav .search_cart .cartContainer {
   display: none;
 }
 
