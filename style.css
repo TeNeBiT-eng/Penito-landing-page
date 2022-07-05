@@ -169,7 +169,7 @@ header nav .search_cart {
 }
 
 .section2 {
-  padding-top: 4rem;
+  margin-top: 10vh;
 }
 .section2 h1 {
   font-size: 2rem;
@@ -257,12 +257,12 @@ header nav .search_cart {
 .section2 .funitureItems div span p {
   color: black;
 }
-.section2 .seeeMoreBtnContainer {
+.section2 .seeMoreBtnContainer {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
 }
-.section2 .seeeMoreBtnContainer button {
+.section2 .seeMoreBtnContainer button {
   background-color: hsl(196deg, 36%, 17%);
   color: white;
   padding: 1rem 1.5rem;
@@ -271,7 +271,7 @@ header nav .search_cart {
 }
 
 .section3 {
-  margin-top: 5rem;
+  margin-top: 10vh;
 }
 .section3 h1 {
   text-align: center;
@@ -296,4 +296,162 @@ header nav .search_cart {
   text-align: center;
   width: 90%;
   margin: 0 auto;
+}
+.section3 .services_image .serviceandbenefitImg {
+  width: 90%;
+  margin: auto;
+  padding-top: 4rem;
+}
+.section3 .services_image .serviceandbenefitImg img {
+  width: 100%;
+}
+.section3 .knowMoreBtnContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.section3 .knowMoreBtnContainer button {
+  background-color: hsl(196deg, 36%, 17%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.section4 {
+  margin-top: 10vh;
+  padding-bottom: 5rem;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.section4 .customerReviewSection .customerReviewText h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.section4 .customerReviewSection .customerReviewText p {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: hsl(196deg, 10%, 38%);
+}
+.section4 .customerReviewSection .customerReviewText p #myBtn {
+  background-color: hsl(196deg, 36%, 17%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+.section4 .customerReviewSection .customerReviewText .ratingsContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+.section4 .customerReviewSection .customerReviewText .name_post {
+  padding-top: 0.5rem;
+}
+.section4 .customerReviewSection .customerReviewText .name_post .name {
+  color: black;
+  font-weight: 600;
+}
+.section4 .customerReviewSection .customerReviewImg {
+  padding-top: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.section4 .customerReviewSection .customerReviewImg img {
+  width: 100%;
+}
+
+.section5 {
+  margin-top: 5vh;
+}
+.section5 h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 3rem 0;
+}
+.section5 .companyLogoContainer {
+  display: flex;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.section5 .companyLogoContainer .company {
+  margin: auto;
+  transition: 0.4s ease-in-out;
+}
+.section5 .companyLogoContainer .company.company:hover {
+  transform: scale(1.1);
+}
+.section5 .companyLogoContainer .company img {
+  filter: grayscale(100%);
+  max-width: 75%;
+  cursor: pointer;
+}
+.section5 .companyLogoContainer .company img:hover {
+  filter: grayscale(0%);
+}
+
+.section6 {
+  background-color: hsl(0deg, 0%, 98%);
+  margin: 3rem 0;
+}
+.section6 h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 3rem 0;
+}
+.section6 .roomContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.section6 .roomContainer .image_container {
+  position: relative;
+  cursor: pointer;
+}
+.section6 .roomContainer .image_container:hover .city_name_view_container {
+  opacity: 1;
+  text-align: center;
+  width: 90%;
+  left: 5%;
+}
+.section6 .roomContainer .image_container .city_img {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.section6 .roomContainer .image_container .city_img img {
+  width: 100%;
+  border-radius: 3px;
+}
+.section6 .roomContainer .image_container .city_name_view_container {
+  border-radius: 4%;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  bottom: 0%;
+  right: 0%;
+  height: 98.5%;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease-in-out;
+}
+.section6 .roomContainer .image_container .city_name_view_container .city_name_view {
+  width: 20%;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

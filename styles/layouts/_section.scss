@@ -68,7 +68,7 @@
 }
 
 .section2 {
-  padding-top: 4rem;
+  margin-top: 10vh;
   h1 {
     font-size: 2rem;
     font-weight: 500;
@@ -85,8 +85,6 @@
     color: hsla(196, 10%, 38%, 1);
   }
 
-  
-
   .dropbtn {
     background-color: hsla(164, 71%, 42%, 1);
     color: white;
@@ -102,7 +100,7 @@
     background-color: hsla(164, 71%, 42%, 1);
   }
 
-  .dropdownContainer{
+  .dropdownContainer {
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -138,16 +136,16 @@
   .show {
     display: block;
   }
-  .collection{
+  .collection {
     display: none;
   }
 
-  .funitureItems{
+  .funitureItems {
     padding-top: 10vh;
     display: grid;
     grid-auto-flow: row;
     place-items: center;
-    div{
+    div {
       width: 90%;
       background-color: hsla(180, 27%, 98%, 1);
       border-radius: 8px;
@@ -155,14 +153,14 @@
       text-align: center;
       padding: 1.5rem 0;
       cursor: pointer;
-      img{
+      img {
         max-width: 50%;
       }
-      span{
-        h3{
+      span {
+        h3 {
           padding-top: 5vh;
         }
-        p{
+        p {
           // width: 70%;
           // margin: auto;
           color: black;
@@ -170,11 +168,11 @@
       }
     }
   }
-  .seeeMoreBtnContainer{
+  .seeMoreBtnContainer {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    button{
+    button {
       background-color: hsla(196, 36%, 17%, 1);
       color: white;
       padding: 1rem 1.5rem;
@@ -184,35 +182,201 @@
   }
 }
 
-.section3{
-  margin-top: 5rem;
-  h1{
+.section3 {
+  margin-top: 10vh;
+  h1 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     // padding-bottom: 1rem;
   }
-  .services_image{
-   .services{
-    .serviceIllustration{
-      padding-top: 2rem;
-      .serviceIllustrationImg{
-        display: flex;
-        justify-content: center;
+  .services_image {
+    .services {
+      .serviceIllustration {
+        padding-top: 2rem;
+        .serviceIllustrationImg {
+          display: flex;
+          justify-content: center;
+        }
+        h2 {
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 1rem 0;
+        }
+        p {
+          color: hsl(196deg, 10%, 38%);
+          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+        }
       }
-      h2{
+    }
+    .serviceandbenefitImg {
+      width: 90%;
+      margin: auto;
+      padding-top: 4rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .knowMoreBtnContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    button {
+      background-color: hsla(196, 36%, 17%, 1);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 2rem;
+      border: none;
+    }
+  }
+}
+
+.section4 {
+  margin-top: 10vh;
+  padding-bottom: 5rem;
+  background-color: hsla(0, 0%, 98%, 1);
+  .customerReviewSection {
+    .customerReviewText {
+      h2 {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 600;
-        padding: 1rem 0;
+        padding: 2rem 0;
       }
-      p{
-        color: hsl(196deg, 10%, 38%);
+      p {
         text-align: center;
         width: 90%;
         margin: 0 auto;
+        line-height: 1.7;
+        color: hsl(196deg, 10%, 38%);
+        #myBtn {
+          background-color: hsla(196, 36%, 17%, 1);
+          color: white;
+          padding: 1rem 1.5rem;
+          border-radius: 2rem;
+          border: none;
+        }
+      }
+      .ratingsContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+      }
+      .name_post {
+        padding-top: 0.5rem;
+        .name {
+          color: black;
+          font-weight: 600;
+        }
       }
     }
-   }
+
+    .customerReviewImg {
+      padding-top: 1rem;
+      width: 90%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section5 {
+  margin-top: 5vh;
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 3rem 0;
+  }
+  .companyLogoContainer {
+    display: flex;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    .company {
+      margin: auto;
+      transition: 0.4s ease-in-out;
+      &.company:hover {
+        transform: scale(1.1);
+      }
+      img {
+        filter: grayscale(100%);
+        max-width: 75%;
+        cursor: pointer;
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}
+
+.section6 {
+  background-color: hsla(0, 0%, 98%, 1);
+  margin: 3rem 0;
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 3rem 0;
+  }
+
+  .roomContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    .image_container {
+      position: relative;
+      cursor: pointer;
+      &:hover .city_name_view_container {
+        opacity: 1;
+        text-align: center;
+        width: 90%;
+        left: 5%;
+      }
+      .city_img {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          border-radius: 3px;
+        }
+      }
+      .city_name_view_container {
+        border-radius: 4%;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        bottom: 0%;
+        right: 0%;
+        height: 98.5%;
+        opacity: 0;
+        overflow-x: hidden;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: 0.5s ease-in-out;
+        .city_name_view {
+          width: 20%;
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+      }
+    }
   }
 }

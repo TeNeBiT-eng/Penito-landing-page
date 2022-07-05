@@ -7,7 +7,7 @@ fetch(url)
   console.log(funitureDatas)
   funitureDatas.map(funitureData => {
     let li = document.createElement('div')
-    let span = `<img src=${funitureData.image} alt='' />
+    let span = `<img src=${funitureData.image} alt=''/>
     <span>
       <h3>TITLE:</h3><p>${funitureData.title}</p>
       <h3>Category:</h3>${funitureData.category} 
