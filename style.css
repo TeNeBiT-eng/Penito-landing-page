@@ -233,36 +233,67 @@ header nav .search_cart {
 .section2 .collection {
   display: none;
 }
-.section2 .furnitureAssets {
-  padding-top: 5vh;
+.section2 .funitureItems {
+  padding-top: 10vh;
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
 }
-.section2 .furnitureAssets .chair {
+.section2 .funitureItems div {
+  width: 90%;
   background-color: hsl(180deg, 27%, 98%);
   border-radius: 8px;
-  width: 90%;
-  margin: auto;
-}
-.section2 .furnitureAssets .chair .chairImg {
-  margin: 0 auto;
-  width: 90%;
-}
-.section2 .furnitureAssets .chair .chairImg img {
-  width: 100%;
-}
-.section2 .furnitureAssets .chair .homeWooden {
-  text-transform: capitalize;
-  font-weight: 700;
+  margin-top: 1rem;
   text-align: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.section2 .funitureItems div img {
+  max-width: 50%;
+}
+.section2 .funitureItems div span h3 {
+  padding-top: 5vh;
+}
+.section2 .funitureItems div span p {
   color: black;
 }
-.section2 .furnitureAssets .chair .grey_green {
+.section2 .seeeMoreBtnContainer {
   display: flex;
-  padding-top: 3vh;
+  justify-content: center;
+  padding-top: 1rem;
 }
-.section2 .furnitureAssets .chair .grey_green .grey {
+.section2 .seeeMoreBtnContainer button {
+  background-color: hsl(196deg, 36%, 17%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.section3 {
+  margin-top: 5rem;
+}
+.section3 h1 {
+  text-align: center;
+  font-size: 1.5rem;
   font-weight: 600;
 }
-.section2 .furnitureAssets .chair .grey_green .green {
+.section3 .services_image .services .serviceIllustration {
+  padding-top: 2rem;
+}
+.section3 .services_image .services .serviceIllustration .serviceIllustrationImg {
+  display: flex;
+  justify-content: center;
+}
+.section3 .services_image .services .serviceIllustration h2 {
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: hsl(164deg, 71%, 42%);
+  padding: 1rem 0;
+}
+.section3 .services_image .services .serviceIllustration p {
+  color: hsl(196deg, 10%, 38%);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

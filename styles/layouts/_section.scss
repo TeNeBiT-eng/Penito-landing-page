@@ -142,38 +142,77 @@
     display: none;
   }
 
-  .furnitureAssets{
-    padding-top: 5vh;
-    .chair{
+  .funitureItems{
+    padding-top: 10vh;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    div{
+      width: 90%;
       background-color: hsla(180, 27%, 98%, 1);
       border-radius: 8px;
-      width: 90%;
-      margin: auto;
-      .chairImg{
-        margin: 0 auto;
-        width: 90%;
-        img{
-          width: 100%;
-        }
+      margin-top: 1rem;
+      text-align: center;
+      padding: 1.5rem 0;
+      cursor: pointer;
+      img{
+        max-width: 50%;
       }
-      .homeWooden{
-        text-transform: capitalize;
-        font-weight: 700;
-        text-align: center;
-        color: black;
-        // margin-left: 4rem;
-      }
-      .grey_green{
-        display: flex;
-        padding-top: 3vh;
-        .grey{
-          font-weight: 600;
+      span{
+        h3{
+          padding-top: 5vh;
         }
-        .green{
-          font-weight: 600;
-          color: hsla(164, 71%, 42%, 1);
+        p{
+          // width: 70%;
+          // margin: auto;
+          color: black;
         }
       }
     }
+  }
+  .seeeMoreBtnContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    button{
+      background-color: hsla(196, 36%, 17%, 1);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 2rem;
+      border: none;
+    }
+  }
+}
+
+.section3{
+  margin-top: 5rem;
+  h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    // padding-bottom: 1rem;
+  }
+  .services_image{
+   .services{
+    .serviceIllustration{
+      padding-top: 2rem;
+      .serviceIllustrationImg{
+        display: flex;
+        justify-content: center;
+      }
+      h2{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1rem 0;
+      }
+      p{
+        color: hsl(196deg, 10%, 38%);
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+   }
   }
 }
