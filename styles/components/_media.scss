@@ -1,4 +1,4 @@
-@media (min-width: 950px) {
+@media (min-width: 920px) {
   header {
     nav {
       .menuLinks {
@@ -11,7 +11,7 @@
         li {
           a {
             color: hsla(196, 35%, 11%, 1);
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
         }
       }
@@ -20,6 +20,7 @@
       }
       .search_cart {
         display: flex !important;
+        column-gap: 1rem;
       }
     }
   }
@@ -48,6 +49,39 @@
           font-size: 1rem;
           font-weight: 600;
           width: unset;
+        }
+      }
+    }
+  .seeMoreBtnContainer{
+    button{
+      &:hover{
+        color: hsla(196, 36%, 17%, 1);
+        background-color: transparent;
+        border: 1px solid hsla(196, 36%, 17%, 1);
+      }
+    }
+  }
+  }
+
+  .section3{
+
+  }
+
+  .section5{
+    .companyLogoContainer{
+      .company {
+        margin: auto;
+        transition: 0.4s ease-in-out;
+        &.company:hover {
+          transform: scale(1.1);
+        }
+        img {
+          filter: grayscale(100%);
+          max-width: 75%;
+          cursor: pointer;
+          &:hover {
+            filter: grayscale(0%);
+          }
         }
       }
     }

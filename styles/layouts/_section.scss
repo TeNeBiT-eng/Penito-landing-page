@@ -173,6 +173,8 @@
     justify-content: center;
     padding-top: 1rem;
     button {
+      transition: all .5s ease;
+      cursor: pointer;
       background-color: hsla(196, 36%, 17%, 1);
       color: white;
       padding: 1rem 1.5rem;
@@ -226,6 +228,8 @@
     justify-content: center;
     padding-top: 2rem;
     button {
+      transition: all .5s ease;
+      cursor: pointer;
       background-color: hsla(196, 36%, 17%, 1);
       color: white;
       padding: 1rem 1.5rem;
@@ -253,6 +257,11 @@
         margin: 0 auto;
         line-height: 1.7;
         color: hsl(196deg, 10%, 38%);
+        // transition: all .4s ease;
+      }
+      .readMoreBtnContainer{
+        display: flex;
+        justify-content: center;
         #myBtn {
           background-color: hsla(196, 36%, 17%, 1);
           color: white;
@@ -296,7 +305,7 @@
   }
   .companyLogoContainer {
     display: flex;
-    row-gap: 1rem;
+    row-gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
@@ -307,12 +316,8 @@
         transform: scale(1.1);
       }
       img {
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
         max-width: 75%;
-        cursor: pointer;
-        &:hover {
-          filter: grayscale(0%);
-        }
       }
     }
   }
@@ -321,6 +326,7 @@
 .section6 {
   background-color: hsla(0, 0%, 98%, 1);
   margin: 3rem 0;
+  padding-bottom: 3rem;
   h2 {
     text-align: center;
     font-size: 1.5rem;

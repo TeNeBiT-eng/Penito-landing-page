@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 920px) {
   header nav .menuLinks {
     display: none !important;
   }
@@ -21,13 +21,15 @@
   }
   header nav .menuLinks2 li a {
     color: hsl(196deg, 35%, 11%);
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   header nav .bars {
     display: none;
   }
   header nav .search_cart {
     display: flex !important;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 
   .section2 .dropdownContainer {
@@ -56,6 +58,27 @@
     font-weight: 600;
     width: unset;
   }
+  .section2 .seeMoreBtnContainer button:hover {
+    color: hsl(196deg, 36%, 17%);
+    background-color: transparent;
+    border: 1px solid hsl(196deg, 36%, 17%);
+  }
+
+  .section5 .companyLogoContainer .company {
+    margin: auto;
+    transition: 0.4s ease-in-out;
+  }
+  .section5 .companyLogoContainer .company.company:hover {
+    transform: scale(1.1);
+  }
+  .section5 .companyLogoContainer .company img {
+    filter: grayscale(100%);
+    max-width: 75%;
+    cursor: pointer;
+  }
+  .section5 .companyLogoContainer .company img:hover {
+    filter: grayscale(0%);
+  }
 }
 header {
   background-color: #f4f4f4;
@@ -75,15 +98,42 @@ header nav .menuLinks2 {
   display: none;
 }
 header nav .menuLinks {
+  border-radius: 10px;
   position: absolute;
   top: -1000%;
   right: 0%;
   width: 100%;
   padding: 3rem 0;
   background-color: #f4f4f4;
-  -webkit-clip-path: polygon(0px 29px, 90.18% 28.5px, 101.64% -1.67%, 100% 100%, 0px 100%);
-          clip-path: polygon(0px 29px, 90.18% 28.5px, 101.64% -1.67%, 100% 100%, 0px 100%);
   transition: all 500ms ease;
+}
+header nav .menuLinks .inputContainer {
+  display: flex;
+  justify-content: center;
+}
+header nav .menuLinks .inputContainer input[type=text] {
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 2rem;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(/images/Group\ 9search.svg);
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+header nav .menuLinks .inputContainer input[type=text]::-moz-placeholder {
+  padding-left: 1rem;
+}
+header nav .menuLinks .inputContainer input[type=text]:-ms-input-placeholder {
+  padding-left: 1rem;
+}
+header nav .menuLinks .inputContainer input[type=text]::placeholder {
+  padding-left: 1rem;
+}
+header nav .menuLinks .inputContainer input[type=text]:focus {
+  width: 100%;
 }
 header nav .menuLinks li {
   padding: 1rem;
@@ -101,7 +151,7 @@ header nav .search_cart {
 }
 
 .activeShow {
-  top: 59% !important;
+  top: 110% !important;
 }
 
 .section1 {
@@ -263,6 +313,8 @@ header nav .search_cart {
   padding-top: 1rem;
 }
 .section2 .seeMoreBtnContainer button {
+  transition: all 0.5s ease;
+  cursor: pointer;
   background-color: hsl(196deg, 36%, 17%);
   color: white;
   padding: 1rem 1.5rem;
@@ -311,6 +363,8 @@ header nav .search_cart {
   padding-top: 2rem;
 }
 .section3 .knowMoreBtnContainer button {
+  transition: all 0.5s ease;
+  cursor: pointer;
   background-color: hsl(196deg, 36%, 17%);
   color: white;
   padding: 1rem 1.5rem;
@@ -336,7 +390,11 @@ header nav .search_cart {
   line-height: 1.7;
   color: hsl(196deg, 10%, 38%);
 }
-.section4 .customerReviewSection .customerReviewText p #myBtn {
+.section4 .customerReviewSection .customerReviewText .readMoreBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+.section4 .customerReviewSection .customerReviewText .readMoreBtnContainer #myBtn {
   background-color: hsl(196deg, 36%, 17%);
   color: white;
   padding: 1rem 1.5rem;
@@ -375,7 +433,7 @@ header nav .search_cart {
 }
 .section5 .companyLogoContainer {
   display: flex;
-  row-gap: 1rem;
+  row-gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
@@ -388,17 +446,13 @@ header nav .search_cart {
   transform: scale(1.1);
 }
 .section5 .companyLogoContainer .company img {
-  filter: grayscale(100%);
   max-width: 75%;
-  cursor: pointer;
-}
-.section5 .companyLogoContainer .company img:hover {
-  filter: grayscale(0%);
 }
 
 .section6 {
   background-color: hsl(0deg, 0%, 98%);
   margin: 3rem 0;
+  padding-bottom: 3rem;
 }
 .section6 h2 {
   text-align: center;
@@ -454,4 +508,63 @@ header nav .search_cart {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+footer .footerFlex .footerPenito .footerLogo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+footer .footerFlex .footerPenito p {
+  text-align: center;
+  color: hsl(196deg, 10%, 38%);
+}
+footer .footerFlex .footerPenito .smLogo {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+footer .footerFlex .faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  cursor: pointer;
+}
+footer .footerFlex .faq .question {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+footer .footerFlex .faq .question h3 {
+  font-weight: 500;
+}
+footer .footerFlex .faq .answer {
+  max-height: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+}
+footer .footerFlex .faq .answer p {
+  line-height: 1.6;
+  padding-top: 0.4rem;
+}
+
+.faq.active .answer {
+  max-height: 300px !important;
+}
+
+.faq.active i {
+  transform: rotate(180deg);
+}
+
+i {
+  transition: 0.4s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

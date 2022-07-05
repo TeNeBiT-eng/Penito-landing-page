@@ -25,6 +25,9 @@
           <img src="/images/Logo.svg" alt="" />
         </div>
         <ul class="menuLinks" id="menuLinks">
+          <div class="inputContainer">
+            <input type="text" name="search" placeholder="Search...">
+          </div>
           <li><a href="#">Living Room</a></li>
           <li><a href="#">Office</a></li>
           <li><a href="#">Bedroom</a></li>
@@ -220,8 +223,10 @@
               fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
               tempor porta.
             </span>
-            <button onclick="myFunction()" id="myBtn">Read more</button>
           </p>
+          <div class="readMoreBtnContainer">
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
 
           <div class="ratingsContainer">
             <img src="./images/Rating Stars.svg" alt="" />
@@ -337,13 +342,69 @@
     <footer>
       <div class="footerFlex">
         <div class="footerPenito">
-          <div>
+          <div class="footerLogo">
             <img src="/images/Logo.svg" alt="" />
           </div>
           <p>Sophisticated simplicity for the independent mind</p>
 
           <div class="smLogo">
-            
+            <div>
+              <img src="./images/Vectorinstafooterlogo.svg" alt="">
+            </div>
+            <div>
+              <img src="./images/Vectorfbfooterlogo.svg" alt="">
+            </div>
+            <div>
+              <img src="./images/Vectorlinkedinfooterlogo.svg" alt="">
+            </div>
+            <div>
+              <img src="./images/Vectorbehancefooterlogo.svg" alt="">
+            </div>
+            <div>
+              <img src="./images/Vectordribblefooterlogo.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Help & Information</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            <p>Pagination</p>
+            <p>Term & Conditions</p>
+            <p>Contact</p>
+            <p>Homepage</p>
+            <p>Terms of use</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>About Us</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            <p>Help Centre</p>
+            <p>Address Store</p>
+            <p>Privacy Policy</p>
+            <p>Receivers and Amplifiers</p>
+            <p>Clothings</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Category</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            <p>Delivery</p>
+            <p>Legal Notice</p>
+            <p>Documentation</p>
+            <p>Secure Payment</p>
+            <p>Stores</p>
           </div>
         </div>
       </div>
@@ -352,5 +413,6 @@
     <script src="./script.js" async defer></script>
     <script src="./fetch.js" async defer></script>
     <script src="./readMore.js" async defer></script>
+    <script src="./footer.js" async defer></script>
   </body>
 </html>

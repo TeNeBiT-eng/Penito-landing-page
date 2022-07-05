@@ -17,19 +17,44 @@ header{
         }
         .menuLinks{
             // display: none;
+            border-radius: 10px;
             position: absolute;
             top: -1000%;
             right: 0%;
             width: 100%;
             padding: 3rem 0;
             background-color: #f4f4f4;
-            clip-path: polygon(
-                0px 29px,
-                90.18% 28.5px, 
-                101.64% -1.67%,
-                100% 100%, 0px 100%
-              );
+            // clip-path: polygon(
+            //     0px 29px,
+            //     90.18% 28.5px, 
+            //     101.64% -1.67%,
+            //     100% 100%, 0px 100%
+            //   );
               transition: all 500ms ease;
+              .inputContainer{
+                        display: flex;
+                        justify-content: center;
+                  input[type=text] {
+                    width: 90%;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 2rem;
+                    font-size: 16px;
+                    background-color: white;
+                    background-image: url(/images/Group\ 9search.svg);
+                    // background-position: 10px 10px; 
+                    background-repeat: no-repeat;
+                    padding: 12px 20px 12px 40px;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
+                    &::placeholder{
+                        padding-left: 1rem;
+                    }
+                  }
+                  input[type=text]:focus {
+                    width: 100%;
+                  }
+              }
             li{
                 padding: 1rem;
                 text-align: center;
@@ -52,5 +77,5 @@ header{
 
 .activeShow{
     // right: 0 !important;
-    top: 59% !important;
+    top: 110% !important;
 }

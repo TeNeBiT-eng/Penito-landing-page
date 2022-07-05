@@ -1,5 +1,5 @@
 const furnitureContainer = document.querySelector('.funitureItems');
-const url = 'https://fakestoreapi.com/products?limit=5'
+const url = 'https://fakestoreapi.com/products?limit=1'
 
 fetch(url)
 .then((resp) => resp.json())
