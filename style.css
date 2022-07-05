@@ -237,9 +237,9 @@ header nav .search_cart {
   color: hsl(196deg, 10%, 38%);
 }
 .section2 .dropbtn {
-  background-color: hsl(164deg, 71%, 42%);
+  background-color: hsl(196deg, 10%, 38%);
   color: white;
-  padding: 16px;
+  padding: 16px 27px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -247,6 +247,7 @@ header nav .search_cart {
 }
 .section2 .dropbtn:hover,
 .section2 .dropbtn:focus {
+  transition: 0.5s ease;
   background-color: hsl(164deg, 71%, 42%);
 }
 .section2 .dropdownContainer {
@@ -278,7 +279,7 @@ header nav .search_cart {
   background-color: #ddd;
 }
 .section2 .show {
-  display: block;
+  display: block !important;
 }
 .section2 .collection {
   display: none;
