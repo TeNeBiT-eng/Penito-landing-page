@@ -144,7 +144,6 @@
   .funitureItems {
     padding-top: 10vh;
     display: grid;
-    // grid-auto-flow: row;
     place-items: center;
     div {
       width: 90%;
@@ -266,7 +265,8 @@
         #myBtn {
           background-color: hsla(196, 36%, 17%, 1);
           color: white;
-          padding: 1rem 1.5rem;
+          font-size: .7rem;
+          padding: .4rem 1rem;
           border-radius: 2rem;
           border: none;
         }

@@ -126,6 +126,7 @@
     .customerReviewSection{
       display: flex;
       align-items: center;
+      column-gap: 1rem;
       width: 90%;
       margin: 0 auto;
       .customerReviewText{
@@ -133,8 +134,25 @@
           text-align: start !important;
         }
         p{
+          width: 100% !important;
           text-align: start !important;
           margin: 0 !important;
+          font-size: .8rem;
+          span{
+            font-size: .8rem;
+          }
+        }
+        .readMoreBtnContainer{
+          justify-content: flex-start !important;
+        }
+        .ratingsContainer{
+          justify-content: flex-start !important;
+        }
+      }
+      .customerReviewImg{
+        padding-top: 0 !important;
+        img{
+          width: 500px !important;
         }
       }
     }
