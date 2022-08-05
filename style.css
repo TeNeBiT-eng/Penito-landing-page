@@ -22,6 +22,40 @@
   header nav .menuLinks2 li a {
     color: hsl(196deg, 35%, 11%);
     font-size: 1rem;
+    position: relative;
+    transition: 0.5s ease;
+  }
+  header nav .menuLinks2 li a:hover {
+    font-weight: 500;
+    opacity: 1;
+  }
+  header nav .menuLinks2 li a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    opacity: 0.001;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s ease;
+    background-color: hsl(196deg, 35%, 11%);
+  }
+  header nav .menuLinks2 li a:hover::before {
+    width: 0;
+    opacity: 1;
+  }
+  header nav .menuLinks2 li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #1f1534;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transition: 0.5s ease;
+  }
+  header nav .menuLinks2 li a:hover::after {
+    width: 100%;
   }
   header nav .bars {
     display: none;
@@ -43,7 +77,6 @@
   header nav .search_cart .cartContainer {
     display: block !important;
   }
-
   .section1 {
     flex-direction: row !important;
     align-items: center;
@@ -57,10 +90,29 @@
   .section1 .textIntro .btn1_btn2 {
     justify-content: flex-start !important;
   }
+  .section1 .textIntro .btn1_btn2 .btn1Container button {
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .section1 .textIntro .btn1_btn2 .btn1Container button:hover {
+    background-color: transparent;
+    border: 1px solid hsl(196deg, 36%, 17%);
+  }
+  .section1 .textIntro .btn1_btn2 .btn1Container button:hover p {
+    color: hsl(196deg, 36%, 17%) !important;
+  }
+  .section1 .textIntro .btn1_btn2 .btn2Container button {
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .section1 .textIntro .btn1_btn2 .btn2Container button:hover {
+    color: hsl(196deg, 36%, 17%);
+    background-color: transparent;
+    border: 1px solid hsl(196deg, 36%, 17%);
+  }
   .section1 .introImgContainer {
     margin-top: 0 !important;
   }
-
   .section2 #items {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -104,7 +156,6 @@
     background-color: transparent;
     border: 1px solid hsl(196deg, 36%, 17%);
   }
-
   .section3 .services_image {
     display: flex;
     align-items: center;
@@ -128,7 +179,11 @@
     text-align: start !important;
     margin: 0 !important;
   }
-
+  .section3 .knowMoreBtnContainer button:hover {
+    color: hsl(196deg, 36%, 17%);
+    background-color: transparent;
+    border: 1px solid hsl(196deg, 36%, 17%);
+  }
   .section4 .customerReviewSection {
     display: flex;
     align-items: center;
@@ -152,6 +207,15 @@
   .section4 .customerReviewSection .customerReviewText .readMoreBtnContainer {
     justify-content: flex-start !important;
   }
+  .section4 .customerReviewSection .customerReviewText .readMoreBtnContainer #myBtn {
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .section4 .customerReviewSection .customerReviewText .readMoreBtnContainer #myBtn:hover {
+    color: hsl(196deg, 36%, 17%);
+    background-color: transparent;
+    border: 1px solid hsl(196deg, 36%, 17%);
+  }
   .section4 .customerReviewSection .customerReviewText .ratingsContainer {
     justify-content: flex-start !important;
   }
@@ -161,7 +225,6 @@
   .section4 .customerReviewSection .customerReviewImg img {
     width: 500px !important;
   }
-
   .section5 .companyLogoContainer .company {
     margin: auto;
     transition: 0.4s ease-in-out;
@@ -177,7 +240,6 @@
   .section5 .companyLogoContainer .company img:hover {
     filter: grayscale(0%);
   }
-
   footer .footerFlex {
     display: flex;
     align-items: flex-start !important;
@@ -215,6 +277,44 @@
   footer .footerFlex .faq .answer p {
     color: hsl(196deg, 10%, 38%);
     text-align: start !important;
+  }
+  footer .footerFlex .faq .answer p a {
+    color: hsl(196deg, 35%, 11%);
+    font-size: 1rem;
+    position: relative;
+    transition: 0.5s ease;
+  }
+  footer .footerFlex .faq .answer p a:hover {
+    font-weight: 500;
+    opacity: 1;
+  }
+  footer .footerFlex .faq .answer p a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    opacity: 0.001;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s ease;
+    background-color: hsl(196deg, 35%, 11%);
+  }
+  footer .footerFlex .faq .answer p a:hover::before {
+    width: 0;
+    opacity: 1;
+  }
+  footer .footerFlex .faq .answer p a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #1f1534;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transition: 0.5s ease;
+  }
+  footer .footerFlex .faq .answer p a:hover::after {
+    width: 100%;
   }
   footer .footerFlex .footerPenito .footerLogo {
     justify-content: flex-start !important;
@@ -689,6 +789,12 @@ footer .footerFlex .footerPenito .smLogo {
        column-gap: 1.5rem;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
+}
+footer .footerFlex .footerPenito .smLogo div {
+  transition: 0.5s ease;
+}
+footer .footerFlex .footerPenito .smLogo div:hover {
+  transform: translateY(-5px);
 }
 footer .footerFlex .footerPenito .smLogo div img {
   cursor: pointer;

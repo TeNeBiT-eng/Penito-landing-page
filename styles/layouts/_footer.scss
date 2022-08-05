@@ -20,6 +20,10 @@ footer {
         padding-top: 2rem;
         padding-bottom: 0.5rem;
         div {
+          transition: .5s ease;
+          &:hover{
+            transform: translateY(-5px);
+          }
           img {
             cursor: pointer;
           }
